@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policies>
+  <policy policyType="googledrive" policyName="GoogleDrive1" policyTemplate="online_v1_basic_oauth">
+    <credentialName>CompletePolicyProjectGoogleDrive_GoogleDrive1</credentialName>
+    <applicationVersion>v1</applicationVersion>
+    <applicationType>online</applicationType>
+    <authenticationMethod>BASIC_OAUTH</authenticationMethod>
+    <apiVersion>v3</apiVersion>
+  </policy>
+</policies>
