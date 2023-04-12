@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "title": "File ID",
+      "description": "The ID of the file.",
+      "type": "string"
+    },
+    "type": {
+      "title": "Type of file",
+      "description": "Type of file",
+      "enum": [
+        "Binary",
+        "DOC/DOCX",
+        "Image/JPEG",
+        "Image/PNG",
+        "Image/SVG+XML",
+        "JSON",
+        "PDF",
+        "PPT/PPTX",
+        "RTF",
+        "Text/CSV",
+        "Text/HTML",
+        "Text/plain",
+        "Text/TSV",
+        "XLS/XLSX",
+        "ZIP"
+      ],
+      "type": "string"
+    }
+  },
+  "title": "Files",
+  "required": [
+    "id",
+    "type"
+  ],
+  "additionalProperties": false,
+  "connectorName": "googledrive",
+  "interaction": "DOWNLOADCONTENT"
+}

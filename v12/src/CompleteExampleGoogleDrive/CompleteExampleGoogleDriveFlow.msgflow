@@ -25,7 +25,7 @@
       <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_8" location="432,27">
         <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
       </nodes>
-      <nodes xmi:type="ComIbmApplicationConnectorRequest_googledrive.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="443,92" applicationConnectorType="googledrive">
+      <nodes xmi:type="ComIbmApplicationConnectorRequest_googledrive.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="443,92" applicationConnectorType="googledrive" action="DOWNLOADCONTENT" businessObject="Files" displayName="Download file" schemaPrefix="gen/CompleteExampleGoogleDriveFlow.Google_Drive_Request" policyUrl="{CompletePolicyProjectGoogleDrive}:GoogleDrive1" messageSetProperty="gen/CompleteExampleGoogleDriveFlow.Google_Drive_Request.response.schema.json">
         <translation xmi:type="utility:ConstantString" string="Google Drive Request"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_4" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>

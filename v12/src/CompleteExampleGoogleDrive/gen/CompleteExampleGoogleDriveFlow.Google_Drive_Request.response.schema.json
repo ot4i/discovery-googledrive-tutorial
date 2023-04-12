@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "displayOrder": 2,
+      "title": "File Name",
+      "description": "The name of the file.",
+      "display": {
+        "nameProperty": true
+      },
+      "type": "string"
+    },
+    "content": {
+      "displayOrder": 5,
+      "title": "File Content",
+      "description": "The content of the file.",
+      "type": "string"
+    },
+    "isText": {
+      "displayOrder": 6,
+      "title": "Is Text Content",
+      "description": "Is the file content in text format or not?",
+      "type": "boolean"
+    },
+    "responseContentType": {
+      "displayOrder": 7,
+      "title": "Type of File Content",
+      "description": "Property to identify the MIME type and/or encoding of the file in response. This property is applicable only for GET/DOWNLOAD actions on file. Generally, the response from the standard MIME Content-Type header unless there is a custom way the endpoint sends this information.",
+      "type": "string"
+    }
+  },
+  "title": "Files",
+  "additionalProperties": false
+}
